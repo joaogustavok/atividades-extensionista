@@ -1,0 +1,86 @@
+:host {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #eaf7ea;
+    /* Cor de fundo ecológica */
+    color: #2f4f2f;
+    /* Cor de texto verde escuro */
+    padding: 0;
+}
+
+.header {
+    background-color: #4caf50;
+    /* Verde natural */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f0fff0;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #4caf50;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}

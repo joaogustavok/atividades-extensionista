@@ -1,0 +1,41 @@
+<header class="header">
+  <h1><i class="fas fa-tree"></i> Consulta de Pontos de Coleta de Lixo</h1>
+</header>
+
+<div class="container">
+  <div class="form-group">
+    <label for="cep">Digite seu CEP:</label>
+    <input
+      type="text"
+      id="cep"
+      [(ngModel)]="cepInput"
+      maxlength="8"
+      placeholder="Ex: 12345678"
+    />
+    <button (click)="buscarPontos()">Buscar</button>
+  </div>
+
+  <div *ngIf="resultados.length > 0">
+    <h2>Locais Encontrados:</h2>
+    <ul>
+      <li *ngFor="let ponto of resultados">
+        <h3>{{ ponto.nome }}</h3>
+        <p><strong>Endereço:</strong> {{ ponto.endereco }}</p>
+        <p>
+          <strong>Horário de Funcionamento:</strong>
+          {{ ponto.horarioFuncionamento }}
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="resultados.length === 0 && cepInput">
+    <p>Nenhum ponto de coleta encontrado para o CEP informado.</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>
+    Faça sua parte para um mundo mais limpo e verde! <i class="fas fa-leaf"></i>
+  </p>
+</footer>
